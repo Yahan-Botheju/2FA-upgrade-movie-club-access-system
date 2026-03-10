@@ -27,6 +27,8 @@
     "express": "^5.2.1",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.2.4"
+    "mongoose": "^9.2.4",
+    "qrcode": "^1.5.4",
+    "speakeasy": "^2.0.0"
   }
 }

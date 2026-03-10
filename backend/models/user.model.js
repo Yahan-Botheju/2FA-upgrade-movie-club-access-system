@@ -14,7 +14,15 @@ const userSchema = mongoose.Schema(
     refreshToken: {
       type: String,
       default: ''
-    }
+    },
+    twoFactorSecret: {
+      type: String,
+      default: ''
+    },
+    isTwoFactorEnabled: {
+      type: Boolean,
+      default: false
+    },
   },
   {
     timestamps: true
