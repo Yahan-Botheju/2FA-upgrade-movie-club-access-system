@@ -1,0 +1,32 @@
+{
+  "name": "movie-club-access_cookie-based-jwt-auth",
+  "version": "1.0.0",
+  "description": "cookie-based-jwt-auth",
+  "homepage": "https://github.com/Yahan-Botheju/Movie-Club-Access-Cookie-Based-JWT-Authentication-#readme",
+  "bugs": {
+    "url": "https://github.com/Yahan-Botheju/Movie-Club-Access-Cookie-Based-JWT-Authentication-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yahan-Botheju/Movie-Club-Access-Cookie-Based-JWT-Authentication-.git"
+  },
+  "license": "MIT",
+  "author": "yahanR",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch --env-file=.env backend/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.4"
+  }
+}
