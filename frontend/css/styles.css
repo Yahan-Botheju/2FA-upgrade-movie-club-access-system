@@ -10,13 +10,17 @@ body {
 }
 
 .container-main {
-	padding: 15px;
 
+	padding: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	height: 100vh;
+}
+
+.container-logout{
+	margin-bottom: 50px;
 }
 
 .form-inputs {
@@ -56,4 +60,33 @@ body {
 	padding: 5px;
 
 	margin: 0 10px;
+}
+
+.container-main{
+
+	 
+	margin: 10px;
+
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.btn-dashboard{
+	padding: 5px 15px;
+
+	margin: 15px;
+}
+
+.container-img img{
+	width: 200px;
+	height: 200px;
+}
+
+.container-confirm input{
+	padding: 5px 0;
+}
+
+.hide{
+	display: none;
 }

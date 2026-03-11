@@ -19,17 +19,21 @@ async function userLogin(e) {
       credentials: "include",
       body: JSON.stringify({ username, password })
     });
-
+    
     const data = await res.json();
-
-    if (res.ok) {
-      alert('Login success',)
+    
+    if (data.message === '2FA required') {
+      localStorage.setItem('tempUserId', data.userId);
+      
+      window.location.href = 'verification.html'
+    } else if (res.ok) {
+      alert('login success')
       window.location.href = 'dashboard.html'
     } else {
-      alert('Login faild')
-      
+      alert(data.message || 'login error')
     }
-
+    
+    
   } catch (error) {
     console.log(error)
     alert('server error')
@@ -38,4 +42,3 @@ async function userLogin(e) {
 
 form.addEventListener('submit', userLogin);
 
- 
