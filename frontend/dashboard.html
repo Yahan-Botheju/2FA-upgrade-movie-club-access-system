@@ -5,15 +5,35 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<title>Dashboard</title>
+			<link rel="stylesheet" href="../frontend/css/styles.css">
+			<title>Dashboard</title>
 	</head>
 	<body>
-		<h1>Welcome to Dashboard</h1>
-
+		
 		<div class="container-main">
-			<button id="btn-logout">logout</button>
-		</div>
+			<h1>Welcome to Dashboard</h1>
 
-		<script src="dashboard.js"></script>
+			
+			<div class="container-logout">
+				<button id="btn-logout" class="btn-dashboard">logout</button>
+			</div>
+			
+			<div class="container-2fa-enable">
+				<button class="btn-dashboard">enable 2fa</button>
+			</div>
+			
+			<div class="container-img hide">
+				<img src="" alt="">
+			</div>
+			
+			<div class="container-confirm hide">
+				<input type="text">
+				<button class="btn-dashboard">confirm</button>
+			</div>
+			
+		</div>
+			
+			
+			<script src="dashboard.js"></script>
 	</body>
 </html>
