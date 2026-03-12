@@ -31,7 +31,7 @@ const userRegister = expressAsyncHandler(async (req, res) => {
 		password: hashedPassword,
 	});
 
-	res.status(201).json({
+	return res.status(201).json({
 		message: 'user registered success',
 		user: {
 			id: registerUser._id,
