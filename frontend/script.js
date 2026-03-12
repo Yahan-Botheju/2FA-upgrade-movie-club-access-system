@@ -42,3 +42,6 @@ async function userLogin(e) {
 
 form.addEventListener('submit', userLogin);
 
+function userRegister() {
+  
+}
